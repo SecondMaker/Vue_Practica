@@ -1,7 +1,7 @@
 <template>
-  <ListaTareas></ListaTareas>
+  <mainView></mainView>
 </template>
 <script setup>
-import ListaTareas from './components/ListaTareas.vue'
+import mainView from './views/mainView.vue'
 </script>
 <style scoped></style>
