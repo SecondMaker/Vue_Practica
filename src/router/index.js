@@ -14,7 +14,7 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('@/components/ContadoTool.vue'),
+      component: () => import('../modules/contador/component/ContadoTool.vue'),
     },
     {
       path: '/listaTareas',
@@ -22,7 +22,12 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('@/components/ListaTareas.vue'),
+      component: () => import('../modules/listaTareas/component/ListaTareas.vue'),
+    },
+    {
+      path: '/registro',
+      name: 'registro',
+      component: () => import('../modules/registro/views/registroView.vue'),
     },
   ],
 })
